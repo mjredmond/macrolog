@@ -1,3 +1,4 @@
+"""
 BSD 3-Clause License
 
 Copyright (c) 2017, Michael James Redmond, Jr.
@@ -27,3 +28,13 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+"""
+from __future__ import print_function, absolute_import
+from six import iteritems, iterkeys, itervalues
+from six.moves import range
+
+from macrolog.data_model.observable_list import ObservableList
+
+a = ObservableList([list(), 2, 3, 4])
+
+print(a)
